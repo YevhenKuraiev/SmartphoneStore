@@ -5,7 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using Microsoft.EntityFrameworkCore;
-using SmartphoneStore.Models;
+using SmartphoneStore.DAL.EF_Core;
+using SmartphoneStore.DAL.Repositories;
+using SmartphoneStore.DAL.Interfaces;
 
 namespace SmartphoneStore
 {
@@ -27,6 +29,8 @@ namespace SmartphoneStore
                     Configuration["Data:SportStoreProducts:ConnectionString"]));
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         public void Configure(IApplicationBuilder app,
@@ -35,6 +39,7 @@ namespace SmartphoneStore
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvc(routes => {
 
                 routes.MapRoute(
@@ -68,7 +73,7 @@ namespace SmartphoneStore
             });
             SeedData.EnsurePopulated(app);
 
-            CultureInfo cultureInfo = new CultureInfo("uk");
+            CultureInfo cultureInfo = new CultureInfo("ru-ru");
             cultureInfo.NumberFormat.CurrencySymbol = "грн";
             CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;

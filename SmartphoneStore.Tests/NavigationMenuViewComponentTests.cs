@@ -1,12 +1,13 @@
 ﻿using Moq;
 using SmartphoneStore.Components;
-using SmartphoneStore.Models;
 using System.Linq;
 using System.Collections.Generic;
 using Xunit;
 using Microsoft.AspNetCore.Mvc.ViewComponents;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Routing;
+using SmartphoneStore.DAL.Entities;
+using SmartphoneStore.DAL.Interfaces;
 
 namespace SmartphoneStore.Tests
 {

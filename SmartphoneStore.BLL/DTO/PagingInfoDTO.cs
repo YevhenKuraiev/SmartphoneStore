@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace SmartphoneStore.Models.ViewModels
+namespace SmartphoneStore.BLL.DTO
 {
     public class PagingInfo
     {

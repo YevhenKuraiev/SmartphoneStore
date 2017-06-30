@@ -1,5 +1,4 @@
-﻿using SmartphoneStore.Models;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 
 namespace SmartphoneStore.DAL.Entities

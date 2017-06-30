@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SmartphoneStore.DAL.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace SmartphoneStore.Models
+namespace SmartphoneStore.DAL.EF_Core
 {
     public class ApplicationDbContext : DbContext
     {
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 

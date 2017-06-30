@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartphoneStore", "Smartpho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartphoneStore.Tests", "SmartphoneStore.Tests\SmartphoneStore.Tests.csproj", "{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartphoneStore.DAL", "SmartphoneStore.DAL\SmartphoneStore.DAL.csproj", "{5317E218-61A4-4B92-B3C3-612CDA39C851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartphoneStore.DAL", "SmartphoneStore.DAL\SmartphoneStore.DAL.csproj", "{5317E218-61A4-4B92-B3C3-612CDA39C851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartphoneStore.BLL", "SmartphoneStore.BLL\SmartphoneStore.BLL.csproj", "{AB120C8F-3598-4696-A475-F9B265716A15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB120C8F-3598-4696-A475-F9B265716A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB120C8F-3598-4696-A475-F9B265716A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB120C8F-3598-4696-A475-F9B265716A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB120C8F-3598-4696-A475-F9B265716A15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

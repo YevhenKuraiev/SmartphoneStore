@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using SmartphoneStore.DAL.Entities;
 using System.Linq;
 
-namespace SmartphoneStore.Models
+namespace SmartphoneStore.DAL.EF_Core
 {
     public static class SeedData
     {

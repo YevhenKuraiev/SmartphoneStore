@@ -1,9 +1,7 @@
-﻿using System;
+﻿using SmartphoneStore.DAL.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace SmartphoneStore.Models.ViewModels
+namespace SmartphoneStore.BLL.DTO
 {
     public class ProductsListViewModel
     {
@@ -11,5 +9,4 @@ namespace SmartphoneStore.Models.ViewModels
         public PagingInfo PagingInfo { get; set; }
         public string CurrentCategory { get; set; }
     }
-
 }

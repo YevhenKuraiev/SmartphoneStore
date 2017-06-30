@@ -1,11 +1,12 @@
 ﻿using System.Linq;
 using Moq;
 using Xunit;
-using SmartphoneStore.Models;
 using SmartphoneStore.Controllers;
-using SmartphoneStore.Models.ViewModels;
 using System;
 using Microsoft.AspNetCore.Mvc;
+using SmartphoneStore.DAL.Interfaces;
+using SmartphoneStore.DAL.Entities;
+using SmartphoneStore.BLL.DTO;
 
 namespace SportsStore.Tests
 {

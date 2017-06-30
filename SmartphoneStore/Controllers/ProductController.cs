@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SmartphoneStore.Models.ViewModels;
-using SmartphoneStore.Models;
+using SmartphoneStore.DAL.Interfaces;
+using SmartphoneStore.BLL.DTO;
 
 namespace SmartphoneStore.Controllers
 {

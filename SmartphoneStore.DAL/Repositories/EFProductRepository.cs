@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SmartphoneStore.DAL.EF_Core;
+using SmartphoneStore.DAL.Entities;
+using SmartphoneStore.DAL.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace SmartphoneStore.Models
+namespace SmartphoneStore.DAL.Repositories
 {
     public class EFProductRepository : IProductRepository
     {

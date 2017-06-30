@@ -1,8 +1,5 @@
 ﻿using SmartphoneStore.DAL.Entities;
-using SmartphoneStore.Models;
 using System.Linq;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace SmartphoneStore.Tests

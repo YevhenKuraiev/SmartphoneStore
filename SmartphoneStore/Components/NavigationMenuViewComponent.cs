@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SmartphoneStore.Models;
-using System;
+using SmartphoneStore.DAL.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SmartphoneStore.Components
 {
