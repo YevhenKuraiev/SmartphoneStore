@@ -27,5 +27,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="1.1.1" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartphoneStore.DAL\SmartphoneStore.DAL.csproj" />
+  </ItemGroup>
 
 </Project>

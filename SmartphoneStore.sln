@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartphoneStore", "SmartphoneStore\SmartphoneStore.csproj", "{5930F6A7-4754-48F7-A79F-04653A871875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartphoneStore.Tests", "SmartphoneStore.Tests\SmartphoneStore.Tests.csproj", "{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartphoneStore.Tests", "SmartphoneStore.Tests\SmartphoneStore.Tests.csproj", "{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartphoneStore.DAL", "SmartphoneStore.DAL\SmartphoneStore.DAL.csproj", "{5317E218-61A4-4B92-B3C3-612CDA39C851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979A6927-3A6B-4BB3-9846-2CF0AF5AB333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5317E218-61A4-4B92-B3C3-612CDA39C851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
