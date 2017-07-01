@@ -1,4 +1,5 @@
-﻿using SmartphoneStore.DAL.Entities;
+﻿using SmartphoneStore.BLL.BusinessModels;
+using SmartphoneStore.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

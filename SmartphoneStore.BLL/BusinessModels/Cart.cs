@@ -1,7 +1,8 @@
-﻿using System.Linq;
+﻿using SmartphoneStore.DAL.Entities;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace SmartphoneStore.DAL.Entities
+namespace SmartphoneStore.BLL.BusinessModels
 {
     public class Cart
     {

@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SmartphoneStore.DAL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SmartphoneStore.DAL.EF_Core
 {
@@ -12,5 +9,6 @@ namespace SmartphoneStore.DAL.EF_Core
             : base(options) { }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }

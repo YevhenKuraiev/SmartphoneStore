@@ -5,9 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using Microsoft.EntityFrameworkCore;
-using SmartphoneStore.DAL.EF_Core;
 using SmartphoneStore.DAL.Repositories;
 using SmartphoneStore.DAL.Interfaces;
+using SmartphoneStore.BLL.BusinessModels;
+using Microsoft.AspNetCore.Http;
+using SmartphoneStore.DAL.EF_Core;
 
 namespace SmartphoneStore
 {
@@ -25,9 +27,11 @@ namespace SmartphoneStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration["Data:SportStoreProducts:ConnectionString"]));
+                options.UseSqlServer((Configuration["Data:SportStoreProducts:ConnectionString"]), b => b.MigrationsAssembly("SmartphoneStore")));
             services.AddTransient<IProductRepository, EFProductRepository>();
+            services.AddTransient<IOrderRepository, EFOrderRepository>();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
