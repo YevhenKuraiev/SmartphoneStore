@@ -1,9 +1,9 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using SmartphoneStore.DAL.Entities;
-using SmartphoneStore.BLL.DTO;
 using SmartphoneStore.DAL.Interfaces;
 using SmartphoneStore.BLL.BusinessModels;
+using SmartphoneStore.Models;
 
 namespace SmartphoneStore.Controllers
 {
@@ -15,6 +15,21 @@ namespace SmartphoneStore.Controllers
         {
             repository = repoService;
             cart = cartService;
+        }
+
+        [HttpGet]
+        public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
+
+        [HttpPost]
+        public IActionResult MarkShipped(int orderID)
+        {
+            Order order = repository.Orders.FirstOrDefault(o => o.OrderID == orderID);
+            if (order != null)
+            {
+                order.Shipped = true;
+                repository.SaveOrder(order);
+            }
+            return RedirectToAction(nameof(List));
         }
 
         [HttpGet]

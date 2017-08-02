@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SmartphoneStore.BLL.DTO
+namespace SmartphoneStore.BLL.BusinessModels
 {
     public class PagingInfo
     {

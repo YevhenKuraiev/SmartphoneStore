@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SmartphoneStore.BLL.DTO
+namespace SmartphoneStore.Models
 {
     public class CartIndexViewModel
     {

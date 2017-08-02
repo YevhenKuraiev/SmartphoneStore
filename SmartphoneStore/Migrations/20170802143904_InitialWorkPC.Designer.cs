@@ -8,9 +8,10 @@ using SmartphoneStore.DAL.EF_Core;
 namespace SmartphoneStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170802143904_InitialWorkPC")]
+    partial class InitialWorkPC
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -50,8 +51,6 @@ namespace SmartphoneStore.Migrations
                     b.Property<bool>("GiftWrap");
 
                     b.Property<string>("Name");
-
-                    b.Property<bool>("Shipped");
 
                     b.HasKey("OrderID");
 

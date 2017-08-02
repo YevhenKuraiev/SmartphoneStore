@@ -5,6 +5,7 @@ using SmartphoneStore.Controllers;
 using SmartphoneStore.DAL.Entities;
 using SmartphoneStore.DAL.Interfaces;
 using Xunit;
+using SmartphoneStore.Models;
 
 namespace SmartphoneStore.Tests
 {
@@ -15,7 +16,7 @@ namespace SmartphoneStore.Tests
         {
             Mock<IOrderRepository> mock = new Mock<IOrderRepository>();
             Cart cart = new Cart();
-            Order order = new Order();
+            OrderViewModel order = new OrderViewModel();
             OrderController target = new OrderController(mock.Object, cart);
 
             ViewResult result = target.Checkout(order) as ViewResult;
@@ -34,7 +35,7 @@ namespace SmartphoneStore.Tests
             OrderController target = new OrderController(mock.Object, cart);
             target.ModelState.TryAddModelError("error", "error");
 
-            ViewResult result = target.Checkout(new Order()) as ViewResult;
+            ViewResult result = target.Checkout(new OrderViewModel()) as ViewResult;
 
             mock.Verify(m => m.SaveOrder(It.IsAny<Order>()), Times.Never);
             Assert.True(string.IsNullOrEmpty(result.ViewName));
@@ -49,7 +50,7 @@ namespace SmartphoneStore.Tests
             cart.AddItem(new Product(), 1);
             OrderController target = new OrderController(mock.Object, cart);
 
-            RedirectToActionResult result = target.Checkout(new Order()) as RedirectToActionResult;
+            RedirectToActionResult result = target.Checkout(new OrderViewModel()) as RedirectToActionResult;
 
             mock.Verify(m => m.SaveOrder(It.IsAny<Order>()), Times.Once);
             Assert.Equal("Completed", result.ActionName);

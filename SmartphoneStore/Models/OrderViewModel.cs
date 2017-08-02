@@ -3,7 +3,7 @@ using SmartphoneStore.DAL.Entities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SmartphoneStore.BLL.DTO
+namespace SmartphoneStore.Models
 {
     public class OrderViewModel
     {
@@ -12,6 +12,9 @@ namespace SmartphoneStore.BLL.DTO
 
         [BindNever]
         public IEnumerable<CartLine> Lines { get; set; }
+
+        [BindNever]
+        public bool Shipped { get; set; }
 
         [Required(ErrorMessage = "Введите имя")]
         public string Name { get; set; }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using SmartphoneStore.BLL.DTO;
+using SmartphoneStore.BLL.BusinessModels;
 using System.Collections.Generic;
 
 namespace SmartphoneStore.BLL.Infrastructure
