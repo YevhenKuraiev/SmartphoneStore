@@ -3,7 +3,7 @@ using SmartphoneStore.DAL.Entities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SmartphoneStore.BLL.DTO
+namespace SmartphoneStore.Models
 {
     public class OrderViewModel
     {

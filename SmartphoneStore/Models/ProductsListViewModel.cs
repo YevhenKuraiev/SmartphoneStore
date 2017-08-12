@@ -1,7 +1,8 @@
-﻿using SmartphoneStore.DAL.Entities;
+﻿using SmartphoneStore.BLL.BusinessModels;
+using SmartphoneStore.DAL.Entities;
 using System.Collections.Generic;
 
-namespace SmartphoneStore.BLL.DTO
+namespace SmartphoneStore.Models
 {
     public class ProductsListViewModel
     {

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Moq;
-using SmartphoneStore.BLL.DTO;
+using SmartphoneStore.BLL.BusinessModels;
 using SmartphoneStore.BLL.Infrastructure;
 using System.Collections.Generic;
 using System.Threading.Tasks;

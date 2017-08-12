@@ -2,8 +2,8 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using SmartphoneStore.DAL.Entities;
 using SmartphoneStore.DAL.Interfaces;
-using SmartphoneStore.BLL.DTO;
 using SmartphoneStore.BLL.BusinessModels;
+using SmartphoneStore.Models;
 
 namespace SmartphoneStore.Controllers
 {

@@ -6,7 +6,8 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using SmartphoneStore.DAL.Interfaces;
 using SmartphoneStore.DAL.Entities;
-using SmartphoneStore.BLL.DTO;
+using SmartphoneStore.Models;
+using SmartphoneStore.BLL.BusinessModels;
 
 namespace SportsStore.Tests
 {
