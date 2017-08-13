@@ -2,9 +2,11 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using SmartphoneStore.DAL.Interfaces;
 using SmartphoneStore.DAL.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SmartphoneStore.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductRepository repository;

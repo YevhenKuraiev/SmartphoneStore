@@ -8,8 +8,8 @@ using SmartphoneStore.DAL.EF_Core;
 namespace SmartphoneStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20170710185550_ShippedOrders")]
-    partial class ShippedOrders
+    [Migration("20170812134703_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,11 +64,14 @@ namespace SmartphoneStore.Migrations
                     b.Property<int>("ProductID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Category");
+                    b.Property<string>("Category")
+                        .IsRequired();
 
-                    b.Property<string>("Description");
+                    b.Property<string>("Description")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<decimal>("Price");
 

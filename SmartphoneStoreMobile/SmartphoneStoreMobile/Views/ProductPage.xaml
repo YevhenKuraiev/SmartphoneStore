@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:SmartphoneStoreMobile.ViewModels"
+             x:Class="SmartphoneStoreMobile.Views.ProductPage">
+    <ContentPage.BindingContext>
+        <viewModels:ProductViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        
+        <Label Text="Смартфоны" TextColor="Black" FontAttributes="Bold"></Label>
+        <Button Text="Получить товары" Command="{Binding GetData}"></Button>
+        <ListView 
+            x:Name="productList"
+            HasUnevenRows="True"
+            ItemsSource="{Binding Products}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"></Label>
+                                <Label Text="{Binding Description}"></Label>
+                                <Label Text="{Binding Price}"></Label>
+                                <Label Text="{Binding Category}"></Label>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
